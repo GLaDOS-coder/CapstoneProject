@@ -1,0 +1,364 @@
+/* Universal Styles & Global resets*/
+*,
+.container,
+.container-fluid,
+.jumbotron,
+.jumbotron-fluid,
+.row,
+.col-sm-5,
+.col-sm-7,
+.col-sm-4,
+.col-md-4,
+.col-md-5,
+.col-md-7,
+.col-lg-7,
+.col-lg-5 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    color: #4b4b4b;
+}
+
+a,
+a:hover {
+    color: #4b4b4b;
+    text-decoration: none;
+}
+
+/* Nav Bar Edits */
+.navbar {
+    padding-left: 24px;
+    padding-right: 24px;
+    height: 64px;
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+/* Nav Bar - Left Side Edits */
+a.navbar-brand {
+    height: 32px;
+}
+
+#logo-first {
+    font-weight: bolder;
+}
+
+#logo-second {
+    color: #b3b3b3;
+}
+
+/* Nav Bar - Right Tab Edits */
+.navbar-right {
+    margin-left: auto;
+}
+
+.navbar-right li:not(:last-child) {
+    margin-right: 16px;
+}
+
+#myNavbar a:hover {
+    color: #b3b3b3;
+}
+
+/* Jumbotron Edits */
+.jumbotron {
+    background-color: #d8d8d8;
+}
+
+.jumbotron .container-fluid {
+    max-width: 2000px;
+    margin: auto;
+}
+
+/* Jumbotron picture */
+.jumbotron img {
+    padding: 32px 24px;
+    width: 100%;
+}
+
+/* Jumbotron text */
+.jumbotron .col-lg-5 {
+    align-self: center;
+    padding-right: 72px;
+}
+
+/* Jumbotron button */
+.jumbotron .btn {
+    width: 95%;
+    background-color: #4b4b4b;
+}
+
+/* Second Container "Practice" */
+.container-fluid.second  {
+    max-width: 2000px;
+    margin: auto;
+}
+
+.second .col-lg-7 {
+   border-right: 1px solid #d8d8d8;
+}
+
+/* Second Container left picture & text */
+.second img {
+    padding: 32px 24px;
+    width: 100%;
+}
+
+.second .lg-media-cont {
+    padding: 0 24px 32px 24px;
+}
+
+/* Second Container right picture & text */
+.second .media {
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.second .media-left {
+    width: 35%;
+}
+
+.media-left img {
+    padding: 16px;
+}
+
+.second .media-body {
+    align-self: center;
+    padding: 16px 16px 16px 0;
+}
+
+.second .colored {
+    background-color: #d8d8d8;
+}
+
+/* Third Container "Start Learning" */
+.third {
+    background-color: #d8d8d8;
+    padding: 32px 56px 16px 56px;
+}
+
+.third h2 {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.third .row {
+    align-items: stretch;
+    max-width: 1692.67px;
+    margin: auto;
+}
+
+.card {
+    margin: 16px;
+}
+
+.third .card-img-top {
+    height: auto;
+}
+
+/* Fourth Container "Thesis exhibit" */
+.container-fluid.fourth  {
+    max-width: 2000px;
+    margin: auto;
+}
+
+.fourth h2 {
+    text-align: center;
+    padding-top: 32px;
+}
+/* Fourth Container left video & text */
+.fourth video {
+    padding: 32px 24px;
+    width: 100%;
+}
+
+.fourth .lg-media-cont {
+    padding: 0 24px 32px 24px;
+}
+
+/* Fourth Container right picture & text */
+.fourth .media-left {
+    width: 35%;
+}
+
+.fourth-left img {
+    padding: 16px;
+}
+
+.fourth .media-body {
+    align-self: center;
+}
+
+.fourth .col-lg-5 {
+    padding-top: 32px;
+}
+
+.fourth .colored {
+    background-color: #d8d8d8;
+}
+
+/* Footer Edits */
+footer {
+    border-top: 1px solid #d8d8d8;
+}
+
+footer p {
+    float: left;
+    padding: 16px 24px;
+}
+
+footer ul {
+    display: inline-flex;
+    padding: 16px 16px;
+    float: right;
+    align-self: start;
+}
+
+footer li {
+    list-style: none;
+    padding-right: 8px;
+}
+
+footer a {
+    color: #4b4b4b;
+}
+
+.mobile {
+    display: none;
+}
+
+/* Sceen size fixes */
+@media only screen and (max-width: 991px) {
+
+    /*jumbotron edits*/
+    .second .col-lg-7,
+    .fourth .col-lg-5 {
+        display: none;
+    }
+    
+    .jumbotron img {
+        padding: 0;
+    }
+
+    .jumbotron .col-lg-5 {
+        padding: 32px 16px;
+    }
+
+    .jumbotron h1 {
+        margin-bottom: 32px;
+    }
+
+    .jumbotron .btn {
+        margin-top: 24px;
+        width: 100%;
+        background-color: #9b9b9b;
+    }
+
+    .second .colored {
+        background-color: white;
+    }
+
+    /*third section edits*/
+    .third {
+        padding: 32px 16px;
+    }
+    
+    .third .col-sm-4 {
+        padding: 0;
+    }
+
+    .third .card {
+        margin: 8px;
+    }
+    
+}
+
+@media only screen and (max-width: 690px) {
+    .nav.mobile {
+        display: flex;
+    }
+
+    .navbar .container-fluid {
+        display: initial;
+    }
+
+    .navbar .lg-screen {
+        display: none;
+    }
+
+    .navbar-nav {
+        justify-content: space-between;
+        width: 100%;
+        flex-direction: row;
+        overflow: visible;
+        margin-left: initial;
+    }
+
+    #myNavbar li {
+        margin: 0;
+    }
+
+    li img{
+        height: 90%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .third .card-img-top,
+    .third p,
+    .fourth .lg-media-cont,
+    footer ul {
+        display: none;
+    }
+
+    /*second section edits*/
+    .second .lg-screen {
+        display: none;
+    }
+
+    .second .mobile {
+        display: initial;
+    }
+
+    .second .media {
+        border-bottom: none;
+    }
+    
+    .second .media-left {
+        width: 35%;
+    }
+    
+    .second img {
+        padding: 16px;
+    }
+    
+    .second .media-body {
+        align-self: center;
+        padding: 16px 16px 16px 32px;
+    }
+
+    .third {
+        background-color: white;
+    }
+
+    .third .card {
+        background-color: #d8d8d8;
+        width: 100%;
+        padding: 16px 16px 24px 16px;
+    }
+
+    .third .card-body {
+        padding: 0;
+    }
+
+    .third .card-title {
+        margin: 0;
+    }
+
+    .fourth video {
+        padding: 16px 0;
+    }
+}
